@@ -1,23 +1,21 @@
 # How do I approach designing software?
-This project helped me develop the skill of visual decomposition. looking at a real-world scene and breaking it down into its structural components before writing a single line of code. I had to analyze the reference photograph and identify which shapes, textures, and lighting conditions would need to be represented, then map each one to an available primitive. This kind of planning before coding is a design skill that applies far beyond graphics. I also learned how to design for maintainability by externalizing magic numbers into named constants, which made iterative tweaking much faster and less error-prone.
 
-# What new design skills has your work on the project helped you to craft?
+This project helped me develop the skill of visual decomposition. Looking at a real-world scene and breaking it down into its structural components before writing a single line of code. I had to analyze the reference photograph and identify which shapes, textures, and lighting conditions would need to be represented, then map each one to an available primitive. This kind of planning before coding is a design skill that applies far beyond graphics. I also learned how to design for maintainability by externalizing magic numbers into named constants, which made iterative tweaking much faster and less error-prone.
 
-# What design process did you follow for your project work?
+I followed a top-down design process. I started with the overall scene composition, identifying the major objects and their spatial relationships, then worked down to the details of each individual object, choosing its primitive shapes, texture, and material properties. Lighting was designed last, after the objects were placed, so I could see how the scene actually needed to be lit rather than guessing in advance. Each milestone built incrementally on the previous one, adding one layer of complexity at a time.
 
-# How could tactics from your design approach be applied in future work?
+The habit of analyzing a problem visually before coding it, and of separating configuration data from logic, are tactics I can carry into any software design context. Whether designing a user interface, a database schema, or a software architecture, starting with a clear decomposition of the problem before writing code leads to cleaner and more maintainable solutions.
 
 # How do I approach developing programs?
 
-# What new development strategies did you use while working on your 3D scene?
+The most significant new strategy I used was constant-driven development — defining all scene parameters as named constants in one location rather than scattering literal values throughout the code. This made it possible to adjust the position of every grape in the scene by changing a single number, or to add a new light by adding one entry to an array. I also learned to use loop-based initialization for repetitive shader setup, which reduced the lighting code from four nearly identical blocks down to a single reusable loop.
 
-# How did iteration factor into your development?
+Iteration was central to this project. Almost nothing was correct on the first attempt. Object positions, light colors, material shininess values, texture UV scales, and the grape cluster position all required multiple rebuild-and-evaluate cycles before they looked right. Each screenshot revealed something new to adjust. This taught me to make small, targeted changes rather than changing many things at once, so I could isolate what each change was doing to the result.
 
-# How has your approach to developing code evolved throughout the milestones, which led you to the project’s completion?
+Early in the milestones my code was more exploratory, placing objects and hardcoding values just to get something visible on screen. As the project progressed I became more deliberate, refactoring repeated patterns into helper functions and replacing magic numbers with named constants. By the final submission the code was structured so that any individual object or light could be adjusted without touching unrelated code. That evolution from working code to maintainable code reflects a maturation in how I think about development.
 
 # How can computer science help me in reaching my goals?
 
-# How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future educational pathway?
+Computational graphics gave me direct experience with linear algebra concepts — matrix transformations, vector math, coordinate spaces, and normal calculations — that I had previously only encountered in the abstract. Working through these concepts in a real rendering context made them far more intuitive. This foundation will help me in future coursework in areas like artificial intelligence, simulation, and data visualization, all of which rely on similar mathematical underpinnings. It also introduced me to shader programming and the GPU pipeline, which are increasingly relevant across many areas of computer science beyond just graphics.
 
-# How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future professional pathway?
-
+The skills developed in this project are applicable across a wide range of professional fields. In game development or simulation, the OpenGL and C++ fundamentals are directly transferable. In fields like healthcare visualization, engineering CAD, or data science, the ability to think spatially and represent information in three dimensions is increasingly valuable. Beyond the technical skills, the project reinforced professional habits that matter in any software role — writing readable, modular, well-commented code, responding to feedback by making targeted improvements, and iterating methodically toward a goal. These are skills that will serve me regardless of which specific area of computer science I ultimately specialize in.
