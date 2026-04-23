@@ -1,4 +1,5 @@
 # How do I approach designing software?
+This project helped me develop the skill of visual decomposition. looking at a real-world scene and breaking it down into its structural components before writing a single line of code. I had to analyze the reference photograph and identify which shapes, textures, and lighting conditions would need to be represented, then map each one to an available primitive. This kind of planning before coding is a design skill that applies far beyond graphics. I also learned how to design for maintainability by externalizing magic numbers into named constants, which made iterative tweaking much faster and less error-prone.
 
 # What new design skills has your work on the project helped you to craft?
 
